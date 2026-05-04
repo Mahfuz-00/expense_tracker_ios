@@ -121,7 +121,7 @@ struct HomeView: View, HomeViewProtocol {
     }
 
     private var expenseListView: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 10) {
             ForEach(presenter.expenses.prefix(5)) { expense in
                 ExpenseRow(expense: expense)
                     .padding(.horizontal)
